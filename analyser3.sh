@@ -1,0 +1,18 @@
+!#bin/bash
+
+for i in $(ls $1)
+do
+  for j in $(cat $1$1)
+  do 
+    age=$(echo $j | cut -d ":" -f2)
+    if [$age - ge 18]
+    then 
+      teen = $((teen+1))
+    else
+      noteen = $((noteen+1))
+    f1
+  done
+  
+done
+echo $teen
+echo $noteen
