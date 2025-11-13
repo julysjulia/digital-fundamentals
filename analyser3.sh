@@ -1,15 +1,15 @@
-!#bin/bash
+#!/bin/bash
 
 for i in $(ls $1)
 do
-  for j in $(cat $1$1)
+  for j in $(cat $1$i)
   do 
     age=$(echo $j | cut -d ":" -f2)
     if [$age - ge 18]
     then 
-      teen = $((teen+1))
+      teen=$((teen+1))
     else
-      noteen = $((noteen+1))
+      noteen=$((noteen+1))
     f1
   done
   
